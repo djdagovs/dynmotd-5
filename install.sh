@@ -6,12 +6,12 @@ DYNMOTD_BIN_PATH='/usr/local/bin'
 DYNMOTD_CUSTOM_SCRIPTS_PATH='/etc/dynmotd.d'
 
 
-echo ' + installing dynmotd'
+echo ' + Instalacja!!!! Nie Grzebać W Ustawieniach!!!  dynmotd'
 cp ./dynmotd ${DYNMOTD_BIN_PATH}/dynmotd
 chmod 755 ${DYNMOTD_BIN_PATH}/dynmotd
 ln -s ${DYNMOTD_BIN_PATH}/dynmotd ${DYNMOTD_BIN_PATH}/dm 2>/dev/null
 
-echo '  + setting up MOTD'
+echo '  + Najważniejsze Ustawienia Dynamicznego (MOTD)'
 echo "${DYNMOTD_BIN_PATH}/dynmotd" > /etc/profile.d/dynmotd.sh
 chmod 644 /etc/profile.d/dynmotd.sh
 
@@ -20,8 +20,11 @@ mkdir -p ${DYNMOTD_CUSTOM_SCRIPTS_PATH}
 rm ${DYNMOTD_CUSTOM_SCRIPTS_PATH}/00_*.sh 2>/dev/null
 
 
-echo ' + detecting additional OS info'
-# check to see if it's a Raspberry Pi
+echo ' + detecting addit
+
+
+
+# check to see if it's a Raspberry Pi & Ubuntu 21 & Sparky Linux 7.1 (BETAA)
 cat /etc/os-release | grep -q 'Raspbian'
 if [ $? -eq 0 ]
 then
