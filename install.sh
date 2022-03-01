@@ -1,7 +1,7 @@
 #! /bin/bash
 set +x
 
-echo '+ starting install'
+echo '+ Wystartowaałłaa Początkowa 1 Instalacja Dynamicznego (MOTD) '
 DYNMOTD_BIN_PATH='/usr/local/bin'
 DYNMOTD_CUSTOM_SCRIPTS_PATH='/etc/dynmotd.d'
 
@@ -47,5 +47,5 @@ then
 fi
 
 
-echo '+ install complete!'
+echo '+ Instalacja Zakończona Sukcesem Brawo!!! '
 ${DYNMOTD_BIN_PATH}/dynmotd
